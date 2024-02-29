@@ -2,11 +2,6 @@
 
 @import '103-sort_list';
 
-$sorted_list: ();
-@each $name in $list_to_sort {
-  $sorted_list: append($sorted_list, $name);
-}
+$list_to_sort: sort($list_to_sort);
 
-$sorted_list: sort($sorted_list);
-
-@debug $sorted_list;
+@debug $list_to_sort;
